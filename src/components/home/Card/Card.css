@@ -1,0 +1,27 @@
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.cardItems{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.logo img{
+    width: 100px;
+}
+
+@media only screen and (max-width : 668px){
+    .cardItems{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-Width:669px) and (max-width:1080px){
+    .cardItems{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
